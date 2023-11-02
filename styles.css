@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; 
+    background-image: url(././img/gato1.png);
+}
+
+.game-container {
+    position: relative;
+    background-color: #87CEFA;
+    text-align: center;
+}
+
+.sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #87CEFA;
+    
+}
+
+.sun {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 60%;
+}
+
+.bird {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: #161212;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.bird1 {
+    top: 50px;
+    left: 200px;
+}
+
+.bird2 {
+    top: 80px;
+    left:300px;
+}
+
+.bird3 {
+    color: #000;
+    top: 60px;
+    left: 500px;
+}
+
+.cloud {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.cloud1 {
+    top: 30px;
+    left: 500px;
+}
+
+.cloud2 {
+    top: 80px;
+    left: 400px;
+}
+
+.cloud3 {
+    top: 40px;
+    left: 300px;
+}
+
+
+.game-play-area {
+    position: relative;
+    z-index: 1; /* Coloca el área de juego por encima de la hierba y la tierra */
+}
+
+canvas {
+    border: 2px solid #000;
+    display: block;
+    margin: 0 auto;
+}
+
+.grass {
+    position: absolute;
+    bottom: 155px; /* Ajusta la posición de la línea verde */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #50CD50; /* Verde para la hierba */
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(60% - 85px); /* Ajusta la posición de la tierra */
+    background-color: #8B4513; /* Marrón para la tierra */
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    display: none;
+    color: white;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.start-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+/* En tu archivo CSS (styles.css) */
+
+/* Estilo CSS para un elemento con clase "imagen-container" */
+.imagen-container {
+    background-image: url('img/picmix.com_1905157.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    width: 300px;
+    height: 200px;
+}
