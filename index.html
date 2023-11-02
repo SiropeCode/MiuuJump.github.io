@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <audio src="Grabación (2).m4a"></audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiauMiauJump</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <audio id="jumpSound">
+        <source src="./sounds/uisonido.mp3" type="audio/mpeg">
+        
+    </audio>
+    <audio id="collisionSound">
+        <source src="./sounds/dolor.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="achievementSound">
+        <source src="./sounds/yuju.mp3" type="audio/mpeg">
+    </audio>
+    <div class="game-container">
+        <div class="sky">
+            <!-- Sol -->
+    <div class="sun"></div>
+    
+
+    <!-- Pájaros -->
+    <div class="bird bird1"></div>
+    <div class="bird bird2"></div>
+    <div class="bird bird3"></div>
+
+    <!-- Nubes -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+        </div>
+        <div class="game-play-area">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+        </div>
+        <div class="grass"></div>
+        <div class="ground"></div>
+        <div class="game-over" id="gameOver">Game Over</div>
+        <div class="score" id="score">Score: 0</div>
+    </div>
+    <button class="start-button" id="startButton">Start Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
